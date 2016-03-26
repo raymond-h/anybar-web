@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.indicator-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.indicator {
+    width: 38px;
+    height: 38px;
+    transition: background-image 0.2s ease-in-out;
+    background-size: contain;
+}

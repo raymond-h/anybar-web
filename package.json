@@ -11,8 +11,7 @@
     "test": "mocha --compilers js:babel-register,es6:babel-register,es6.js:babel-register test/",
     "build": "babel -d lib/ src/",
     "pretest": "npm run lint",
-    "prebuild": "npm run test",
-    "watch": "onchange src/ -- npm run build && echo Done",
+    "watch": "npm run build -- -w",
     "dev": "npm run watch",
     "prepublish": "npm run build"
   },
@@ -26,5 +25,11 @@
     "eslint": "^2.5.1",
     "mocha": "^2.4.5",
     "onchange": "^2.2.0"
+  },
+  "dependencies": {
+    "browserify-middleware": "^7.0.0",
+    "express": "^4.13.4",
+    "morgan": "^1.7.0",
+    "serve-static": "^1.10.2"
   }
 }
